@@ -1,0 +1,19 @@
+{
+  "name": "ferrovex-embeddings-darwin-x64",
+  "version": "0.1.0",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "ferrovex_embeddings.darwin-x64.node",
+  "files": [
+    "ferrovex_embeddings.darwin-x64.node"
+  ],
+  "description": "Semantic text embedding store (Rust + TypeScript) built on embed_anything and LanceDB",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ferrovex-embeddings-linux-x64-gnu",
+  "version": "0.1.0",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "ferrovex_embeddings.linux-x64-gnu.node",
+  "files": [
+    "ferrovex_embeddings.linux-x64-gnu.node"
+  ],
+  "description": "Semantic text embedding store (Rust + TypeScript) built on embed_anything and LanceDB",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "libc": [
+    "glibc"
+  ]
+}

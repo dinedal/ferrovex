@@ -1,0 +1,19 @@
+{
+  "name": "ferrovex-embeddings-win32-x64-msvc",
+  "version": "0.1.0",
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "ferrovex_embeddings.win32-x64-msvc.node",
+  "files": [
+    "ferrovex_embeddings.win32-x64-msvc.node"
+  ],
+  "description": "Semantic text embedding store (Rust + TypeScript) built on embed_anything and LanceDB",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
