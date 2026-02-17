@@ -6,15 +6,13 @@ const features = enableMetal ? 'onnx,metal' : 'onnx'
 const isRelease = process.argv.includes('--release')
 const passthroughArgs = process.argv.slice(2).filter((arg) => arg !== '--release')
 const args = ['build', '--platform', '--features', features, ...passthroughArgs]
+const napiCliEntry = require.resolve('@napi-rs/cli/scripts/index.js')
 
 if (isRelease) {
   args.push('--release')
 }
 
-const result = spawnSync('napi', args, {
-  stdio: 'inherit',
-  shell: process.platform === 'win32'
-})
+const result = spawnSync(process.execPath, [napiCliEntry, ...args], { stdio: 'inherit' })
 
 if (result.error) {
   console.error(result.error.message)
