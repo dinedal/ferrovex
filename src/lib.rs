@@ -220,7 +220,9 @@ impl StoreInner {
 
     async fn query(&mut self, text: &str, params: QueryParams) -> AnyResult<Vec<QueryMatch>> {
         if self.table.is_none() {
-            return Ok(Vec::new());
+            return Err(anyhow!(
+                "cannot query before data exists: no rows have been inserted yet"
+            ));
         }
 
         let query_embedding = self.embed_text(text).await?;
