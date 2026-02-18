@@ -1,6 +1,6 @@
 {
   "name": "ferrovex-embeddings",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Semantic text embedding store (Rust + TypeScript) built on embed_anything and LanceDB",
   "license": "MIT",
   "repository": {
