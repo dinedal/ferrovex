@@ -31,7 +31,7 @@
     "build:debug": "node scripts/build-native.js",
     "artifacts": "napi artifacts -d artifacts -c package.json",
     "smoke": "node scripts/smoke-test.js",
-    "prepare": "npm run build",
+    "prepare": "node scripts/prepare.js",
     "prepublishOnly": "napi prepublish -t npm --skip-gh-release -c package.json"
   },
   "devDependencies": {
