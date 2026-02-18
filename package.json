@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Semantic text embedding store (Rust + TypeScript) built on embed_anything and LanceDB",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dinedal/ferrovex"
+  },
+  "homepage": "https://github.com/dinedal/ferrovex",
+  "bugs": {
+    "url": "https://github.com/dinedal/ferrovex/issues"
+  },
   "main": "semantic-store.js",
   "types": "semantic-store.d.ts",
   "files": [
