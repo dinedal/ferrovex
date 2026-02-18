@@ -19,12 +19,7 @@
     "semantic-store.js",
     "semantic-store.d.ts",
     "README.md",
-    "LICENSE",
-    "Cargo.toml",
-    "build.rs",
-    "scripts",
-    "src",
-    "*.node"
+    "LICENSE"
   ],
   "scripts": {
     "build": "node scripts/build-native.js --release",
