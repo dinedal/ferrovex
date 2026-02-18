@@ -156,7 +156,12 @@ GitHub workflow: `.github/workflows/release.yml`
 
 Required secrets/variables:
 
-- `NPM_TOKEN` (repo secret)
+- npm Trusted Publishing (GitHub Actions OIDC) must be configured in npm for:
+  - `ferrovex-embeddings`
+  - `ferrovex-embeddings-linux-x64-gnu`
+  - `ferrovex-embeddings-win32-x64-msvc`
+  - `ferrovex-embeddings-darwin-x64`
+  - `ferrovex-embeddings-darwin-arm64`
 - Optional repo variable: `FERROVEX_DISABLE_METAL=1` (for CI fallback)
 
 ## Scorecard
